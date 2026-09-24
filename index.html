@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSCAR-MOD - Mod Skin Free Fire</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0d0e15;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background Hạt Particles */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Khung Thẻ Chính (Glassmorphism) */
+        .main-container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 480px;
+            background: rgba(20, 22, 37, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 234, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 234, 255, 0.2);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* Avatar / Logo */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00eaff;
+            box-shadow: 0 0 20px #00eaff;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Tiêu đề Chữ Phát Sáng */
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* Khung Thông Báo */
+        .announcement {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #00eaff;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #d1d5db;
+            margin: 15px 0 25px 0;
+            text-align: left;
+        }
+
+        /* Danh sách Nút bấm */
+        .btn-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, rgba(0, 234, 255, 0.1), rgba(0, 119, 255, 0.2));
+            border: 1px solid rgba(0, 234, 255, 0.4);
+            border-radius: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-link i {
+            font-size: 18px;
+            color: #00eaff;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background: linear-gradient(135deg, #00eaff, #0077ff);
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.6);
+            transform: translateY(-3px);
+            color: #fff;
+        }
+
+        .btn-link:hover i {
+            color: #fff;
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Hiệu ứng xuất hiện */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Canvas Hạt Nền -->
+    <div id="particles-js"></div>
+
+    <!-- Khung Giao Diện Chính -->
+    <div class="main-container">
+        <!-- Logo / Icon -->
+        <img src="https://cdn-icons-png.flaticon.com/512/686/686589.png" alt="OSCAR MOD" class="profile-img">
+
+        <!-- Tên Web -->
+        <h1 class="title">OSCAR-MOD</h1>
+
+        <!-- Khung Thông Báo -->
+        <div class="announcement">
+            <p><i class="fa-solid fa-bullhorn" style="color: #00eaff;"></i> <b>Thông báo:</b> Chia sẻ những bản mod xịn và mới nhất. Cập nhật phiên bản thường xuyên để tránh lỗi nhé!</p>
+        </div>
+
+        <!-- Danh sách Nút Tải / Link -->
+        <div class="btn-list">
+            <a href="#" class="btn-link">
+                <i class="fa-solid fa-download"></i> Tải App Oscar Mod V1 (APK)
+            </a>
+
+            <a href="#" class="btn-link">
+                <i class="fa-solid fa-fire"></i> Tải File Skin FF Thường
+            </a>
+
+            <a href="#" class="btn-link">
+                <i class="fa-solid fa-bolt"></i> Tải File Skin FF MAX
+            </a>
+
+            <a href="https://zalo.me" target="_blank" class="btn-link">
+                <i class="fa-solid fa-comment-dots"></i> Tham Gia Nhóm Zalo / Telegram
+            </a>
+        </div>
+
+        <!-- Chân Trang -->
+        <div class="footer">
+            © 2026 OSCAR-MOD. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Engine Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00eaff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00eaff",
+                    "opacity": 0.3,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
